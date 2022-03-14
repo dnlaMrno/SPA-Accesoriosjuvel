@@ -388,3 +388,128 @@
 /*------------- FIN ------------------------*/
 
 /*------------------ CONTACTANOS SECCION-----------------*/
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding: 0;
+    background: #FFB7C2;
+    position: relative;
+}
+
+.foottRow {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foottLeft {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.foottRight {
+    text-align: right;
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.titleTres {
+    padding: 2% 5% 2%;
+    font-family: 'Sansita Swashed', cursive;
+    color: #333333;
+    font-size: 50px;
+    text-align: center;
+}
+
+.foottRow h4 {
+    font-family: 'Sansita Swashed', cursive;
+    margin: 10px 0;
+    font-size: 28px;
+    color: #333333;
+}
+
+.foottRow p {
+    font-family: 'Urbanist', sans-serif;
+    color: #333333;
+    line-height: 35px;
+    font-size: 16px;
+}
+
+.foottRight .code {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.foottImg {
+    width: 20%;
+    opacity: 0.3;
+    position: absolute;
+    left: 50%;
+    padding-top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.socialLink {
+    text-align: center;
+}
+
+.socialLink .social {
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 40px 5px 0;
+    background: #FE889F;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.socialLink .social:hover {
+    border: 2px solid;
+    color: #Fff;
+    transform: translateY(-7%);
+}
+
+
+@media screen and (max-width:770px) {
+    .foottLeft {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .foottRight {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .foottImg {
+        width: 40%;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .foottImg {
+        width: 60%;
+        top: 45%;
+    }
+}
+
+@media screen and (max-width:393px) {
+
+    .footer {
+        margin-top: 150px;
+        width: 100%;
+        height: 100%;
+    }
+
+}
