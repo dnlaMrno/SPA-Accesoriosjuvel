@@ -137,8 +137,8 @@
     }
 
     .titleDos {
-        font-size: 40px;
-        margin: 40% 20% 0 5%;
+        font-size: 30px;
+        margin: 30% 20% 0 5%;
     }
 
     .text-box p {
@@ -199,7 +199,77 @@
 
 /*--------------- FIN --------------*/
 
+/*----------------------- SERVICIOS SECCION  ---------------------*/
 
+.service {
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+}
+
+.heading {
+    margin-top: 20%;
+    font-family: 'Sansita Swashed', cursive;
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.serviciosContainer {
+    margin: 90px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+
+.left-col,
+.right-col {
+    position: relative;
+}
+
+.serviciosImage {
+    height: 120%;
+}
+
+.serviciosText {
+    font-family: 'Urbanist', sans-serif;
+    color: #333333;
+    text-align: justify;
+    margin: 3% 20% 10%;
+    font-size: 18px;
+}
+
+
+/*----------------- MEDIA QUERYS -----------*/
+
+@media screen and (max-width: 700px) {
+
+    .serviciosContainer {
+        grid-template-columns: 2fr;
+        margin-top: 5%;
+    }
+
+    .serviciosImage {
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .left-col {
+        width: 50%;
+        min-width: 320px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .serviciosText {
+        margin: auto;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+}
 
 /*---------- HOT SALE SECCION -----------*/
 
