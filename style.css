@@ -240,6 +240,15 @@
     font-size: 18px;
 }
 
+.adjust {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 40px;
+    padding-top: 80px;
+    display: inline-block;
+}
+
 
 /*----------------- MEDIA QUERYS -----------*/
 
@@ -251,7 +260,7 @@
     }
 
     .serviciosImage {
-        margin: auto;
+        margin-left: 40%;
         border-radius: 10px;
     }
 
@@ -263,12 +272,98 @@
 
 @media screen and (max-width: 510px) {
 
+    .serviciosImage {
+        margin-left: 15%;
+    }
+
     .serviciosText {
         margin: auto;
         line-height: 30px;
         font-size: 18px;
     }
+}
 
+@media screen and (max-width: 393px) {
+    .serviciosImage {
+        margin-left: auto;
+    }
+}
+
+/*------------------------ FIN --------------------------*/
+
+/*---------------------------- ACCESORIOS SECCION ---------------------*/
+
+.accesorios .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.accesorios .content .workBx {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.accesorios .content .workBx .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+}
+
+.accesorios .content .workBx:hover .imgBx {
+    transform: translateY(-100%);
+}
+
+.accesorios .content .workBx .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accesorios .content .workBx .textBx {
+    font-family: 'Urbanist', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+    background: #FE889F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accesorios .content .workBx:hover .textBx {
+    transform: translateY(0);
+}
+
+/*-------------------- MEDIA QUERY------------------*/
+@media screen and (max-width: 700px) {
+    .adjust {
+        padding: 0 20px;
+        padding-top: 40px;
+    }
+
+    .accesorios .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .accesorios .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /*---------- HOT SALE SECCION -----------*/
@@ -289,3 +384,7 @@
     font-size: 20px;
     color: #333333;
 }
+
+/*------------- FIN ------------------------*/
+
+/*------------------ CONTACTANOS SECCION-----------------*/
