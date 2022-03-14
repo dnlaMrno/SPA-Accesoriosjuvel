@@ -1,0 +1,217 @@
+/*--------------------- TIPOGRAFIA IMPORTADA------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Sansita+Swashed:wght@800&family=Urbanist:ital,wght@1,600&display=swap');
+
+/*-------------------------------------------------------*/
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/joyas-oro-sobre-fondo-rosa-blanco_112112-567.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.titleUno {
+    font-family: 'Noto Serif JP', serif;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 50px;
+}
+
+.text {
+    padding: 20px 8%;
+}
+
+.menu {
+    margin-left: 30%;
+    text-transform: capitalize;
+}
+
+.fontNavBar {
+    background: #FE889F;
+}
+
+.nav-item2 {
+    padding-left: 10%;
+}
+
+.nav-item2 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FFF;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-item2 a:hover::after {
+    width: 80%;
+}
+
+.titleDos {
+    font-family: 'Sansita Swashed', cursive;
+    color: #333333;
+    font-size: 3em;
+    margin: 4%;
+    margin-right: 60%;
+}
+
+.text-box p {
+    font-family: 'Urbanist', sans-serif;
+    margin-left: 4%;
+    margin-right: 60%;
+    font-size: 18px;
+    color: #333333;
+}
+
+.text-box a {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 4%;
+    color: #333333;
+    border: 1px solid #FE889F;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #FE889F;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: 1px solid #333333;
+    background: transparent;
+    transition: .5s;
+}
+
+/*--------- MEDIA QUERY DEL BANNER, MENU,TITULO Y ESLOGAN-----------*/
+
+@media screen and (max-width: 700px) {
+    .titleDos {
+        font-size: 30px;
+        margin-right: 40%;
+    }
+
+    .text-box p {
+        margin-right: 50%;
+        font-size: 14px;
+    }
+
+    .text-box a {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .nav-item2 {
+        text-align: center;
+        padding-right: 60%;
+    }
+
+    .nav-item2 a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .fontNavBar {
+        background: #fe889f48;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .titleUno {
+        font-size: 35px;
+    }
+
+    .titleDos {
+        margin: 5%;
+        margin-right: 20%;
+    }
+
+    .text-box p {
+        margin: 5%;
+        margin-right: 20%;
+    }
+
+    .nav-item2 {
+        text-align: center;
+        padding-right: 40%;
+    }
+
+    .nav-item2 a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .fontNavBar {
+        background: #fe889f48;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .titleDos {
+        margin: 10%;
+        font-size: 25px;
+        margin-right: 20%;
+    }
+
+    .text-box p {
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+
+    .nav-item2 {
+        text-align: center;
+        padding-right: 40%;
+    }
+
+    .nav-item2 a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .fontNavBar {
+        background: #fe889f48;
+    }
+
+    .text-box .btn {
+        margin-left: 10%;
+    }
+}
+
+/*--------------- FIN --------------*/
+
+
+
+/*---------- HOT SALE SECCION -----------*/
+
+.imageSection {
+    margin: 100px auto;
+    width: 80%;
+    background-image: url(Assets/2810279.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.imageSection a {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    color: #333333;
+}
